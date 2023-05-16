@@ -11,7 +11,7 @@
     <!-- ---------------  Début header   ------------------ -->
     <header>
         <!-- Le menu du site -->
-        <nav>
+        <nav class="container">
             <!-- Home logo-->
             <a href="index.html">
                 <img src="./assets\Logos\logohome.png" alt="">
@@ -30,16 +30,17 @@
     <!-- ---------------   Début des contenus  --------------- -->
     <main>
         <!-- La prémière section de la partie Hero -->
-        <section>
-            <div>
-                <p>
+        <section id="hero">
+            <div class="container">
+                <p class="texte">
                     Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.
                 </p>
-                <h2>
+                <h2 class="titre">
                     Il est Batman.
                 </h2>
                 <!-- Des boutons -->
-                <div>
+                <div class="cta">
+                    <!-- cta : call to action -->
                     <a href="#">VOIR LE HEROS</a>
                     <a href="#">LES ADVERSAIRES</a>
                 </div>
@@ -49,8 +50,8 @@
         <!--  Fin de la prémière section -->
 
         <!-- Début du deuxième section , concernant "BATMAN AU CINEMA"   -->
-        <section>
-            <div>
+        <section id="batman-cinema">
+            <div class="container">
                 <h1>
                     BATMAN AU CINÉMA
                 </h1>
@@ -64,32 +65,35 @@
                 </p>
 
                 <!---   Début des cartes -->
-                <div>
-                    <img src="./assets\Illustrations\Bathome2.png" alt="image de batman">
+                <div class="batman-personnage">
                     <div>
-                        <h3>
-                            Robert Pattinson
-                        </h3>
-                        <p> (2022) </p>
+                        <img src="./assets\Illustrations\Bathome2.png" alt="image de batman">
+                        <div>
+                            <h3>
+                                Robert Pattinson
+                            </h3>
+                            <p> (2022) </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome3.png" alt="image de batman">
                     <div>
-                        <h3>
-                            Christian Bale
-                        </h3>
-                        <p> (2006 - 2008 - 2012) </p>
+                        <img src="./assets\Illustrations\Bathome3.png" alt="image de batman">
+                        <div>
+                            <h3>
+                                Christian Bale
+                            </h3>
+                            <p> (2006 - 2008 - 2012) </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome4.png" alt="image de batman">
                     <div>
-                        <h3>
-                            Ben Affleck
-                        </h3>
-                        <p> 20016- 2017/2020 – 2023 </p>
+                        <img src="./assets\Illustrations\Bathome4.png" alt="image de batman">
+                        <div>
+                            <h3>
+                                Ben Affleck
+                            </h3>
+                            <p> 20016- 2017/2020 – 2023 </p>
+                        </div>
                     </div>
+    
                 </div>
                 <!--  Fin des cartes  -->
             </div>
@@ -97,8 +101,8 @@
        <!-- Fin de la deuxième section, concernant : "BATMAN AU CINEMA"  --> 
 
        <!-- Début de la troisième section , concernant "NÉMÉSIS"   -->
-        <section>
-            <div>
+        <section id="nemesis">
+            <div class="container">
                 <img src="./assets\Illustrations\Bathome13.png" alt="image d'une arme de batman">
                 <h1>
                     NÉMÉSIS
@@ -112,32 +116,35 @@
                 </p>
 
                 <!---   Début des cartes -->
-                <div>
-                    <img src="./assets\Illustrations\Bathome5.png" alt="image de Riddler">
+                <div class="enemi">
                     <div>
-                        <h3>
-                            The Riddler - Paul Dano
-                        </h3>
-                        <p> (2022) </p>
+                        <img src="./assets\Illustrations\Bathome5.png" alt="image de Riddler">
+                        <div>
+                            <h3>
+                                The Riddler - Paul Dano
+                            </h3>
+                            <p> (2022) </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome6.png" alt="image du Joker">
                     <div>
-                        <h3>
-                            Le Joker - Heath Ledge
-                        </h3>
-                        <p> (2008) </p>
+                        <img src="./assets\Illustrations\Bathome6.png" alt="image du Joker">
+                        <div>
+                            <h3>
+                                Le Joker - Heath Ledge
+                            </h3>
+                            <p> (2008) </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome7.png" alt="image de Darkseid">
                     <div>
-                        <h3>
-                            Darkseid - Ray Porter
-                        </h3>
-                        <p> (2022) </p>
+                        <img src="./assets\Illustrations\Bathome7.png" alt="image de Darkseid">
+                        <div>
+                            <h3>
+                                Darkseid - Ray Porter
+                            </h3>
+                            <p> (2022) </p>
+                        </div>
                     </div>
+    
                 </div>
                 <!--  Fin des cartes  -->
             </div>
@@ -145,8 +152,8 @@
        <!-- Fin de la troisième section, concernant : "NÉMÉSIS"  --> 
 
        <!-- Début de la quatrième section, concernant "ALLIES"   -->
-        <section>
-            <div>
+        <section id="allies">
+            <div class=" container">
                 <img src="./assets\Illustrations\Bathome12.png" alt="image d'une arme de batman">
                 <h1>
                     ALLIES
@@ -161,32 +168,35 @@
                 </p>
 
                 <!---   Début des cartes -->
-                <div>
-                    <img src="./assets\Illustrations\Bathome9.png" alt="image d'Alfred Pennyworth">
+                <div class="allie">
                     <div>
-                        <h3>
-                            Alfred Pennyworth - Michael Cain
-                        </h3>
-                        <p> (2006 - 2008 - 2012) </p>
+                        <img src="./assets\Illustrations\Bathome9.png" alt="image d'Alfred Pennyworth">
+                        <div>
+                            <h3>
+                                Alfred Pennyworth - Michael Cain
+                            </h3>
+                            <p> (2006 - 2008 - 2012) </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome8.png" alt="image de Catwoman">
                     <div>
-                        <h3>
-                            Catwoman - Zoé Kravitz
-                        </h3>
-                        <p> (2008) </p>
+                        <img src="./assets\Illustrations\Bathome8.png" alt="image de Catwoman">
+                        <div>
+                            <h3>
+                                Catwoman - Zoé Kravitz
+                            </h3>
+                            <p> (2008) </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome10.png" alt="image de Darkseid">
                     <div>
-                        <h3>
-                            James Gordon
-                        </h3>
-                        <p> (2014-2019) </p>
+                        <img src="./assets\Illustrations\Bathome10.png" alt="image de Darkseid">
+                        <div>
+                            <h3>
+                                James Gordon
+                            </h3>
+                            <p> (2014-2019) </p>
+                        </div>
                     </div>
+    
                 </div>
                 <!--  Fin des cartes  -->
             </div>
@@ -194,8 +204,9 @@
        <!-- Fin de la quatrième section, concernant : "ALLIES"  --> 
 
        <!-- Début de la Cinquième section , concernant "JUSTICE LEAGUE"   -->
-       <section>
-            <div>
+       <section id="justice-league">
+        <div>
+            <div class="container">
                 <h1>
                     JUSTICE LEAGUE
                 </h1>
@@ -206,37 +217,39 @@
                     la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou 
                     surnaturelles menacent son existence.
                 </p>
-                
-                <img src="./assets\Illustrations\Bathome11.png" alt="Image de la Justice League">
-
             </div>
+            <img src="./assets\Illustrations\Bathome11.png" alt="Image de la Justice League">
+        </div>
        </section>
        <!-- Fin de la cinquième section, concernant : "JUSTICE LEAGUE"  --> 
        
        <!--  Début de la section Multimedia  -->
-       <section>
-            <h1>
-                MULTIMÉDIA
-            </h1>
-            <div>
+       <section id="multimedia">
+            <div class="container">
+                <h1>
+                    MULTIMÉDIA
+                </h1>
                 <div>
-                    <img src="./assets\Illustrations\Bathome_ba1.png" alt="image du logo de batman avec un text disant: Batman Begin">
+                    <div>
+                        <img src="./assets\Illustrations\Bathome_ba1.png" alt="image du logo de batman avec un text disant: Batman Begin">
+                    </div>
+                    <div>
+                        <h2> ACTION, Adventure </h2>
+                        <h3> Batman Begins </h3>
+                        <p> IMDB : <span>8.2</span></p>
+                        <p>
+                            Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément 
+                            traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de 
+                            guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à 
+                            Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans 
+                            la lutte contre le crime sous le nom de Batman.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./assets\Illustrations\Bathome_ba2.png" alt="Bande annonce officiel du Batman Begin">
+                    </div>
                 </div>
-                <div>
-                    <h2> ACTION, Adventure </h2>
-                    <h3> Batman Begins </h3>
-                    <p> IMDB : <span>8.2</span></p>
-                    <p>
-                        Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément 
-                        traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de 
-                        guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à 
-                        Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans 
-                        la lutte contre le crime sous le nom de Batman.
-                    </p>
-                </div>
-                <div>
-                    <img src="./assets\Illustrations\Bathome_ba2.png" alt="Bande annonce officiel du Batman Begin">
-                </div>
+    
             </div>
        </section>
        <!--  Fin de la section multimedia    -->

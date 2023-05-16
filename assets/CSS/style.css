@@ -1,3 +1,101 @@
-img{
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(../Font/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(../Font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color : #19587D;
+    --red-color : #B11313;
+    --black-color: #000000;
+    --black-light: #0d0e09;
+    --gray-color: #c4c4c4;
+    --white-color: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+button{
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
     background-color: black;
+    color: white;
+    font-family: 'SpaceGrotesk';
+    font-weight: 300;
+}
+
+/* Design de la navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul li a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-family: 'Rajdhani';
+}
+nav ul li a:hover{
+    color: var(--yellow-color);
+}
+
+/* Design de ma partie en tête hero */
+
+#hero {
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 900px;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+/* design de la section Batman Personnage */
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+/* design de la section Némésis */
+.enemi{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+/* design de la section Alliés */
+.allie{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
 }
