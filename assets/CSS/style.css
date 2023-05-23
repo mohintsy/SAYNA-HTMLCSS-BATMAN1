@@ -1,3 +1,5 @@
+
+/* Définition des typo et des propriété générales */
 @font-face {
     font-family: 'Rajdhani';
     src: url(../Font/Rajdhani-Medium.ttf);
@@ -7,95 +9,764 @@
     src: url(../Font/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
+
 :root{
-    --yellow-color: #FFFF00;
-    --yellow-light: #F8F184;
-    --blue-color : #19587D;
-    --red-color : #B11313;
+    --yellow-color: #ffff00;
+    --yellow-light: #f8f184;
+    --blue-color : #19587d;
+    --red-color : #b11313;
     --black-color: #000000;
     --black-light: #0d0e09;
     --gray-color: #c4c4c4;
     --white-color: #ffffff;
+    --gradiant-white: #eddebf67; 
+    --gradiant-red: #89000979;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* LES ANIMATIONS   */
+
+@keyframes enter-box {
+    from {
+        margin: auto;
+        margin-left: -100%;
+        margin-top: 70px;
+        width: 85%;
+    }
+    to {
+        margin: auto;
+        margin-left: 7%;
+        margin-bottom: 100px;
+        margin-top: 70px;
+        width: 85%;
+    }
 }
 
-h1{
+
+/* FIN  DE L'ANIMATION */
+
+
+/* Design pour les balises prédefinir*/
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+  
+
+h1 {
     font-family: 'Rajdhani';
     font-size: 36px;
-    font-weight: 400;
+    color: #ffffff;
 }
-button{
+
+h2 {
+    font-family: 'SpaceGrotesk';
+    font-size: 22px;
+}
+
+p {
+    font-family: 'SpaceGrotesk';
+    text-align: justify;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
     font-family: 'Rajdhani';
     font-size: 20px;
-    font-weight: 400;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.40), rgba(137, 0, 9, 0.60));
+    width: 200px;
+    height: 30px;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
+.btn:hover {
+    transition: 5s;
+    background-image: linear-gradient(to right, #eddebf, #890009);
 }
 
-body{
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../Illustrations/Bathome1.png') no-repeat center;
+    background-position: 0px 0px;
+    background-size: 100%;
     background-color: black;
-    color: white;
-    font-family: 'SpaceGrotesk';
-    font-weight: 300;
 }
 
-/* Design de la navigation */
+.container {
+    margin: auto;
+    width: 85%;
+    border: solid rgba(255, 255, 255, 0.1) 3px;
+}
 
-nav{
+.main {
+    border-bottom: 0;
+}
+
+
+/* FIN  DES PROPRIETES GENERALES */
+
+
+/* Design du header */
+
+
+/* .logo-header {} */
+
+.header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
+    margin: 50px;
+    margin-bottom: 60px;
 }
 
-ul{
-    list-style: none;
+.header img:hover {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(1083%) hue-rotate(360deg) brightness(110%) contrast(102%);
 }
 
-nav ul li a{
-    color: var(--white-color);
-    font-size: 30px;
+.logo-content img:hover{
+    filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(1083%) hue-rotate(360deg) brightness(110%) contrast(102%);
+
+}
+
+.logo-footer img:hover{
+    filter: brightness(0) saturate(100%) invert(92%) sepia(93%) saturate(1083%) hue-rotate(360deg) brightness(110%) contrast(102%);
+}
+
+.header ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu a {
+    color: #ffffff;
     font-family: 'Rajdhani';
+    font-size: 34px;
+    text-decoration: none;
 }
-nav ul li a:hover{
-    color: var(--yellow-color);
-}
-
-/* Design de ma partie en tête hero */
-
-#hero {
-    background-image: url(../Illustrations/Bathome1.png);
-    height: 900px;
-    background-position: top center;
-    background-repeat: no-repeat;
-
+.menu a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: yellow;
 }
 
-/* design de la section Batman Personnage */
-.batman-personnage{
+/* Design  de la section hero  */
+
+.intro-main {
+    position: relative;
+}
+
+.intro {
+    margin: auto;
+    margin-top: 250px;
+    width: 600px;
+    text-align: center;
+}
+
+.intro .content p {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.intro .content h2 {
+    margin: 30px;
+    color: #ffffff;
+}
+
+.intro .icon-down {
+    margin-top: 300px;
+}
+
+.intro-main .logo-content {
+    position: fixed;
+    top: 45vh;
+    right: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-content img {
+    padding: 10px;
+}
+
+
+/* FIN section hero  */
+
+
+/* Design de la section batman au cinema ---->  Alliés  */
+
+
+/* propriétés qui s'appliquent à toutes les sections */
+
+.box {
+    margin: auto;
+    width: 85%;
+    margin-bottom: 100px;
+    animation-name: enter-box;
+    animation-duration: 4s;
+}
+
+.box .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box .texte {
+    width: 95%;
+    /* font-size: 1.4em; */
+    margin-bottom: 80px;
+}
+
+.box .row {
     display: flex;
     justify-content: space-between;
-    padding: 70px 0;
 }
 
-/* design de la section Némésis */
-.enemi{
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 0;
+.box .row .profil {
+    text-align: center;
+    width: 310px;
 }
 
-/* design de la section Alliés */
-.allie{
+.box .row .profil:hover {
+    transition: 1s;
+    zoom: 1.1;
+    transform: scale(1.1);
+
+}
+
+.box .row .profil img {
+    width: 100%;
+}
+
+.box .row .profil-title {
+    margin: 25px;
+    text-align: center;
+}
+
+
+
+/* Design spécifique à pour chaque section */
+
+.batman {
+    margin-top: 70px;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-allies {
+    justify-content: space-between;
+}
+
+.container-title .title {
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.container-title .img-nemesis {
+    margin-left: -60px;
+    width: 150px;
+}
+
+.div-allies .img-allies {
+    margin-top: -200px;
+    margin-right: -19%;
+}
+
+
+/* FIN section Batman -> Alliés  */
+
+
+/* Design de la section justice league  */
+
+.justice-main {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.justice-main .title {
+    margin-bottom: 30px;
+}
+
+.justice-leagues img {
+    margin-left: -9%;
+    width: 99vw;
+}
+
+
+/* FIN  de la section justice league  */
+
+
+/* DESIGN de la section multimédia  */
+
+.slides-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrow-prec {
+    margin: auto;
+    margin-left: 0;
+}
+
+.arrow-next {
+    margin: auto;
+    margin-right: 0;
+}
+
+.slides-media .slides {
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.slides .description {
+    border-radius: 0px 20px 20px 0px;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    border-left: 0;
+}
+
+.description p {
+    margin: 10px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.description .types-media {
+    font-size: 1em;
+}
+
+.description .version-media span {
+    color: var(--yellow-light);
+}
+
+.description .name-media {
+    font-family: 'Rajdhani';
+    font-size: 1.2em;
+}
+
+.slides img {
+    width: 100%;
+}
+
+
+/* DESIGN d'Image de la Bande d'annonce */
+
+.bande-annonce {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.bande-annonce img {
+    width: 95%;
+    vertical-align: middle;
+}
+
+.bande-annonce img:hover {
+    box-shadow: 1px 2px 20px 15px#ffffff;
+}
+
+
+/* FIN section MULTIMEDIA  */
+
+
+/* DESIGN du formulaire */
+
+.contact {
+    background-color: black;
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
+    margin-left: -9%;
+    width: 99vw;
+}
+
+.contact-main {
+    margin: 0 auto;
+    width: 750px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.contact-main h1 {
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lb-adresse,
+.lb-newsletter,
+.lb-message {
+    font-family: 'SpaceGrotesk';
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.lb-choix {
+    display: block;
+    width: 80%;
+    color: #c4c4c4;
+    font-family: 'Rajdhani';
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+input[type=email],
+input[type=text],
+textarea,
+select {
+    width: 100%;
+    margin: 20px 0px;
+    border: none;
+    border-bottom: 2px solid #c4c4c4;
+    background-color: #ffffff00;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-family: 'SpaceGrotesk';
+}
+
+input[type=checkbox]:checked {
+    font-family: 'FontAwesome';
+    content: "\f00d";
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #c4c4c4;
+}
+
+input:focus,
+textarea:focus {
+    border: 0;
+}
+
+.contact-main input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    text-align: bottom;
+}
+
+.div-formbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.div-formbtn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'SpaceGrotesk';
+    margin: 15px;
+    padding: 10px 30px;
+    font-size: 0.8em;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #c4c4c4, #19587D);
+    border-image-slice: 1;
+}
+
+.div-formbtn a:hover {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
+}
+
+input[type=submit] {
+    border: none;
+    align-self: center;
+    padding: 20px 80px;
+    margin-bottom: 50px;
+    font-family: 'SpaceGrotesk';
+    color: #ffffff;
+    font-size: 18px;
+    background-image: linear-gradient(to right, rgba(13, 14, 9, 0.4), rgba(137, 0, 9, 0.9));
+}
+
+
+/* FIN du design du formulaire  */
+
+
+/* DESIGN  de la sCITATION */
+
+
+.citation {
+    margin-top: 200px;
+}
+
+.citation-main {
     display: flex;
     justify-content: space-between;
-    padding: 70px 0;
+    width: 70%;
+    margin: auto;
+}
+
+.citation-main .open-citation {
+    margin: auto;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.citation-main .close-citation {
+    margin: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.citation-main .text-citation {
+    width: 60%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+
+/* DEsign des élipses */
+
+.ellipse-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    margin-right: 5px;
+    min-width: 120px;
+
+}
+
+.ellipse-1 {
+    border: 1px solid;
+    border-color: var(--blue-color);
+    border-radius: 3px;
+    height: 6px;
+    width: 6px;
+}
+
+.ellipse-11 {
+    background-color: var(--blue-color);
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+}
+
+.text-citation p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.text-citation .citation-auteur p{
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: lighter;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.ellipse-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: px;
+    margin-right: 5px;
+    min-width: 120px;
+
+}
+
+.ellipse-1 {
+    border: 1px solid;
+    border-color: var(--blue-color);
+    border-radius: 3px;
+    height: 6px;
+    width: 6px;
+}
+
+.ellipse-11 {
+    background-color: var(--blue-color);
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+}
+
+/* FIN de la Citation  */
+
+
+/* DESIGN DU FOOTER  */
+
+.footer {
+    border-top: 0;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+
+
+.footer .space-wb {
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.space-wb p,
+.space-wb img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.space-wb p {
+    margin-left: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer .img-footer {
+    margin: auto;
+    text-align: center;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin: 10px;
+}
+
+.logo-footer img {
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.img-footer .social img {
+    margin: 15px;
+}
+
+
+/* FIN FOOTER */
+
+
+/* --------------------- --------------------  */
+/* --------------------- --------------------  */
+
+
+/* --------- PROPRIETE RESPONSIVE ----------- */
+
+
+@media (max-width: 800px) {
+
+    /* responsive de la  section hero */
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .intro .icon-down {
+        margin-top: 30px;
+    }
+
+    .intro-main .logo-content {
+        display: none;
+    }
+
+    .logo-content img {
+        display: block;
+    }
+
+    /* fin section hero */
+
+    /* responsive section batman */
+    .box .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-title .img-allies {
+        display: none;
+    }
+
+    /* fin section batman */
+
+    /* reponsive multimedia */
+
+    .arrow-prec,
+    .arrow-next {
+        display: none;
+    }
+
+    .slides-media .slides {
+        width: 100%;
+        height: auto;
+    }
+
+    .description p,
+    .description .types-media,
+    .description .name-media {
+        font-size: 0.5em;
+    }
+    
+    /* fin multimedia */
+
+    /* reponsive CONTACT  */
+    .contact-main {
+        width: 90%;
+    }
+
+    /* fin formmulaire  */
+
+    /* responsive SECTION CITATION  */
+
+    .citation {
+        margin-top: 20px;
+    }
+
+    .citation-main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .citation-main .text-citation {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Fin CITATION */
+
+    /* reponsive FOOTER  */
+
+    .footer {
+        padding-top: 60px;
+    }
+
+    /* fin Footer */
 }
